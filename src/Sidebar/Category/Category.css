@@ -36,14 +36,6 @@
   border-radius: 50%;
 }
 
-.all {
-  background: linear-gradient(blue, crimson);
-}
-
-.sidebar-label-container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
 .sidebar-label-container input:checked ~ .checkmark {
   background-color: #2196f3;
 }
@@ -70,4 +62,15 @@
 .line {
   margin-top: 3rem;
   border-color: #f7f7f7;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .sidebar-title {
+    font-size: 18px;
+  }
+
+  .sidebar-label-container {
+    padding-left: 20px;
+  }
 }

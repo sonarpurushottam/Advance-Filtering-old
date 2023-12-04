@@ -1,3 +1,5 @@
+/* Your existing styles */
+
 nav {
   display: flex;
   border-bottom: 2px solid #f3f3f3;
@@ -10,8 +12,8 @@ nav {
 
 input {
   padding: 12px 20px;
-  border: none;
-  background: #f7f6f6;
+  border: 2px solid #ccc;
+  background: transparent;
   outline: none;
   margin-right: 20px;
   border-radius: 5px;
@@ -24,3 +26,50 @@ input {
   height: 1.5rem;
   margin-left: 2rem;
 }
+
+.input-container {
+  position: relative;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #666;
+  cursor: default;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #333;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  nav {
+    margin-left: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  input {
+    margin: 10px 0;
+  }
+}
+
+/* Additional responsive styles for other elements can be added here */
