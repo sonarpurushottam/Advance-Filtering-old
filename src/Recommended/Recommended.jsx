@@ -7,41 +7,36 @@ const Recommended = ({ handleClick }) => {
       <div>
         <h2 className="recommended-title">Recommended</h2>
         <div class="recommended-flex">
-          <button
-            class="icon facebook"
-            onclick="handleClick()"
+          <Button
+            className="all-products"
+            onClickHandler={handleClick}
+            value=""
             title="All Products"
-          >
-            All Products
-          </button>
-          <button
-            class="icon twitter"
-            onclick="handleClick('Nike')"
+          />
+          <Button
+            className="nike"
+            onClickHandler={handleClick}
+            value="Nike"
             title="Nike"
-          >
-            Nike
-          </button>
-          <button
-            class="icon instagram"
-            onclick="handleClick('Adidas')"
+          />
+          <Button
+            className="adidas"
+            onClickHandler={handleClick}
+            value="Adidas"
             title="Adidas"
-          >
-            Adidas
-          </button>
-          <button
-            class="icon github"
-            onclick="handleClick('Puma')"
+          />
+          <Button
+            className="puma"
+            onClickHandler={handleClick}
+            value="Puma"
             title="Puma"
-          >
-            Puma
-          </button>
-          <button
-            class="icon youtube"
-            onclick="handleClick('Vans')"
+          />
+          <Button
+            className="vans"
+            onClickHandler={handleClick}
+            value="Vans"
             title="Vans"
-          >
-            Vans
-          </button>
+          />
         </div>
       </div>
     </>

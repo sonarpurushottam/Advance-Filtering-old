@@ -19,6 +19,9 @@
   -ms-user-select: none;
   user-select: none;
 }
+.sidebar-label-container:hover {
+  background-color: #2196f3;
+}
 
 .sidebar-label-container input {
   position: absolute;
@@ -41,7 +44,7 @@
 }
 
 .sidebar-label-container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: #ffc75f;
 }
 
 .sidebar-label-container input:checked ~ .checkmark {

@@ -11,7 +11,8 @@ nav {
 input {
   padding: 12px 20px;
   border: none;
-  background: #f7f6f6;
+  border: 2px solid #ffc75f;
+  background: transparent;
   outline: none;
   margin-right: 20px;
   border-radius: 5px;
@@ -23,4 +24,48 @@ input {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 2rem;
+}
+/* .input-container {
+  position: relative;
+  border: 2px solid #ffc75f;
+} */
+
+/* .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+} */
+.input-container {
+  position: relative;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 300px; /* Adjust the width of the container as needed */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border: 2px solid #ffc75f;
+
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust the distance from the right as needed */
+  transform: translateY(-50%);
+  color: #666;
+  cursor: default;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #333; /* Change the color on hover */
 }
