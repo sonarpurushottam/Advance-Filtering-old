@@ -19,9 +19,6 @@
   -ms-user-select: none;
   user-select: none;
 }
-.sidebar-label-container:hover {
-  background-color: #2196f3;
-}
 
 .sidebar-label-container input {
   position: absolute;
@@ -37,14 +34,6 @@
   width: 20px;
   background-color: #eee;
   border-radius: 50%;
-}
-
-.all {
-  background: linear-gradient(blue, crimson);
-}
-
-.sidebar-label-container:hover input ~ .checkmark {
-  background-color: #ffc75f;
 }
 
 .sidebar-label-container input:checked ~ .checkmark {
@@ -73,4 +62,15 @@
 .line {
   margin-top: 3rem;
   border-color: #f7f7f7;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .sidebar-title {
+    font-size: 18px;
+  }
+
+  .sidebar-label-container {
+    padding-left: 20px;
+  }
 }

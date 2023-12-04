@@ -4,8 +4,9 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
+
 body {
-  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
 a {
@@ -21,13 +22,13 @@ li {
   padding: 10px 20px;
   margin-right: 6px;
   background: transparent;
-  border: none;
   border: 0.6px solid #ccc;
   border-radius: 5px;
   color: #4b4453;
   cursor: pointer;
   box-shadow: inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
+
 .btns:active,
 .btns:focus,
 .btns:focus-within {
@@ -35,6 +36,16 @@ li {
   color: white;
   border-color: solid black;
 }
+
 .btns:hover {
   background-color: #009efa;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .btns {
+    padding: 8px 16px;
+    margin-right: 4px;
+    font-size: 14px;
+  }
 }
